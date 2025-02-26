@@ -1,6 +1,6 @@
 public class DocFileHandler implements Handler {
     private Handler handler;
-    private final String handlerName;
+    private String handlerName;
 
     public DocFileHandler(String handlerName) {
         this.handlerName = handlerName;
