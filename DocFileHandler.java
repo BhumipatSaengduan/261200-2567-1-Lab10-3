@@ -6,10 +6,6 @@ public class DocFileHandler implements Handler {
         this.handlerName = handlerName;
     }
 
-    public void setHandler(Handler handler) {
-        this.handler = handler;
-    }
-
     public void process(File file) {
         if (file.getFileType().equals("document")) {
             System.out.println("Process and saving document file by " + handlerName);
@@ -21,6 +17,10 @@ public class DocFileHandler implements Handler {
         }
     }
 
+    public void setHandler(Handler handler) {
+        this.handler = handler;
+    }
+    
     public String getHandlerName() {
         return handlerName;
     }
